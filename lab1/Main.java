@@ -18,4 +18,28 @@ class Lab1 {
   public int increment(int num) {
     return ++num;
   }
+
+  public max(int a, int b){
+    
+  }
+
+  public min(int a, int b){
+    
+  }
+
+  public sum(int[] nums){
+    
+  }
+
+  public average(int[] nums){
+    
+  }
+
+  public max(int[] nums){
+    
+  }
+
+  public min(int[] nums){
+    
+  }
 }
