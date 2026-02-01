@@ -19,27 +19,39 @@ class Lab1 {
     return ++num;
   }
 
-  public max(int a, int b){
-    
+  public int max(int a, int b){
+    return a > b ? a : b;
   }
 
-  public min(int a, int b){
-    
+  public int min(int a, int b){
+    return a < b ? a : b;
   }
 
-  public sum(int[] nums){
-    
+  public int sum(int[] nums){
+    int sum = 0;
+    for (int n : nums){
+      sum += n;
+    }
+    return sum;
   }
 
-  public average(int[] nums){
-    
+  public int average(int[] nums){
+    return sum(nums)/nums.length;
   }
 
-  public max(int[] nums){
-    
+  public int max(int[] nums){
+    int currMax = nums[0];
+    for (int n: nums){
+      currMax = max(currMax, n);
+    }
+    return currMax;
   }
 
-  public min(int[] nums){
-    
+  public int min(int[] nums){
+    int currMin = nums[0];
+    for (int n: nums){
+      currMin = min(currMin, n);
+    }
+    return currMin;
   }
 }
